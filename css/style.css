@@ -6,8 +6,6 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 100vh;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
 	margin: 0;
 }
 
@@ -85,9 +83,6 @@ body {
 }
 
 @media screen and (max-width: 820px) {
-    body {
-
-    }
 	.blurb {
 		display: none;
 	}
@@ -97,7 +92,7 @@ body {
 		height: 55px;
 		position: absolute;
 		z-index: 2;
-         background-color: #fff;
+        background-color: #fff;
 
 	}
 	.mobile-bar:first-child {
