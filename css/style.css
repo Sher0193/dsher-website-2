@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
-
 body {
 	background-image: url(../img/dylan1.jpg);
 	background-size: cover;
@@ -10,18 +9,20 @@ body {
 }
 
 .blurb {
+	margin-bottom: auto;
 	z-index: 2;
-	position: absolute;
-	left: 0;
-	width: 380px;
+	width: 100%;
 	text-align: center;
+	pointer-events: none;
+}
+
+.blurb p {
+	padding: 10px;
+	margin: 0;
 	font-family: MontSerrat;
 	color: grey;
 	font-weight: 400;
 	font-size: 45px;
-	display: block;
-	padding: 10px;
-	pointer-events: none;
 }
 
 .mobile-bar {
@@ -54,7 +55,7 @@ body {
 	text-decoration: none;
 	color: black;
 	transition: color ease 0.1s;
-    height: 0;
+	height: 0;
 }
 
 .bar .title a:hover {
@@ -92,15 +93,8 @@ body {
 		height: 55px;
 		position: absolute;
 		z-index: 2;
-        background-color: #fff;
-
-	}
-	.mobile-bar:first-child {
+		background-color: #fff;
 		top: 0;
-	}
-	.mobile-bar:nth-child(2) {
-		bottom: 0;
-        opacity: 0;
 	}
 	.bar {
 		top: auto;
@@ -109,7 +103,7 @@ body {
 		width: 100%;
 		justify-content: space-between;
 		background: none;
-        flex-direction: column-reverse;
+		flex-direction: column-reverse;
 	}
 	.bar .links {
 		margin: 2px 0;
@@ -121,10 +115,9 @@ body {
 		margin: 15px 0;
 	}
 	.bar .title a {
-        color: white;
-    }
-    
-    .bar .title a:hover {
-        color: white;
-    }
+		color: white;
+	}
+	.bar .title a:hover {
+		color: white;
+	}
 }
