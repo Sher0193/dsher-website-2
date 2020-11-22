@@ -64,12 +64,16 @@ body {
 
 .bar .links {
 	display: flex;
-	height: 50px;
+	height: 55px;
 	width: 100%;
 	justify-content: center;
 	align-items: center;
 	padding-bottom: 10px;
 	z-index: 2;
+}
+
+.bar .links a {
+    height: 45px;
 }
 
 .bar .links img {
@@ -106,7 +110,9 @@ body {
 		flex-direction: column-reverse;
 	}
 	.bar .links {
-		margin: 2px 0;
+		
+        background-color: #fff;
+        padding: 0;
 	}
 	.bar .links img:hover {
 		transform: none;
