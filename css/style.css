@@ -6,6 +6,8 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 100vh;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 	margin: 0;
 }
 
@@ -54,10 +56,7 @@ body {
 	text-decoration: none;
 	color: black;
 	transition: color ease 0.1s;
-	height: 50px;
-	margin: 0;
-	padding: 0;
-	.
+    height: 0;
 }
 
 .bar .title a:hover {
@@ -66,7 +65,7 @@ body {
 
 .bar .links {
 	display: flex;
-	height: 55px;
+	height: 50px;
 	width: 100%;
 	justify-content: center;
 	align-items: center;
@@ -76,8 +75,8 @@ body {
 
 .bar .links img {
 	margin: 0 10px;
-	width: 50px;
-	height: 50px;
+	width: 45px;
+	height: 45px;
 	transition: transform ease 0.2s;
 }
 
@@ -86,6 +85,9 @@ body {
 }
 
 @media screen and (max-width: 820px) {
+    body {
+
+    }
 	.blurb {
 		display: none;
 	}
@@ -95,13 +97,15 @@ body {
 		height: 55px;
 		position: absolute;
 		z-index: 2;
-		background-color: #fff;
+         background-color: #fff;
+
 	}
-	.mobile-bar:nth-child(1) {
+	.mobile-bar:first-child {
 		top: 0;
 	}
 	.mobile-bar:nth-child(2) {
 		bottom: 0;
+        opacity: 0;
 	}
 	.bar {
 		top: auto;
@@ -110,9 +114,10 @@ body {
 		width: 100%;
 		justify-content: space-between;
 		background: none;
+        flex-direction: column-reverse;
 	}
 	.bar .links {
-		padding: 0;
+		margin: 2px 0;
 	}
 	.bar .links img:hover {
 		transform: none;
@@ -120,4 +125,11 @@ body {
 	.bar .title {
 		margin: 15px 0;
 	}
+	.bar .title a {
+        color: white;
+    }
+    
+    .bar .title a:hover {
+        color: white;
+    }
 }
