@@ -31,7 +31,7 @@ body {
 	pointer-events: none;
 }
 
-.blurb p {
+.blurb h1 {
 	padding: 25px 10px;
 	margin: 0;
 	font-family: MontSerrat;
