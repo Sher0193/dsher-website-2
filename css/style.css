@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 body {
-	background-image: url(../img/dylan1.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 100vh;
 	margin: 0;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .blurb {
@@ -17,7 +24,7 @@ body {
 }
 
 .blurb p {
-	padding: 10px;
+	padding: 25 10px;
 	margin: 0;
 	font-family: MontSerrat;
 	color: grey;
@@ -68,7 +75,7 @@ body {
 	width: 100%;
 	justify-content: center;
 	align-items: center;
-	padding-bottom: 10px;
+	padding-bottom: 25px;
 	z-index: 2;
 }
 
@@ -111,7 +118,7 @@ body {
 	}
 	.bar .links {
         background-color: #fff;
-        padding: 0;
+        padding: 10px 0;
 	}
 	.bar .links img:hover {
 		transform: none;
