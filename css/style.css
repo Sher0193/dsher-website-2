@@ -103,6 +103,16 @@ body {
 }
 
 @media screen and (max-width: 820px) {
+    body {
+        height: 100%;
+        display: block;
+    }
+    .background {
+        position: absolute;
+    }
+    .bar {
+        position: absolute;
+    }
 	.blurb {
 		display: none;
 	}
